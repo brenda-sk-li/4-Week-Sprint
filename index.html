@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Journey: 4-Week Sprint to Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #FFC000, #6600FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        h1.gradient-text {
+            font-size: 2.5rem !important;
+        }
+        @media (min-width: 768px) {
+            h1.gradient-text {
+                font-size: 3.5rem !important;
+            }
+        }
+        @media (min-width: 1024px) {
+            h1.gradient-text {
+                font-size: 4rem !important;
+            }
+        }
+        .week-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .week-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 0, 255, 0.3);
+        }
+        .assistant-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .assistant-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(255, 192, 0, 0.4);
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #FFC000;
+            color: #000066;
+            padding: 0.75rem 1rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: none;
+            z-index: 1000;
+        }
+        .scroll-to-top:hover {
+            background-color: #6600FF;
+            color: #F4F4F4;
+            transform: translateY(-3px);
+        }
+        .timeline-connector {
+            position: relative;
+            height: 60px;
+            width: 4px;
+            background: linear-gradient(180deg, #6600FF, #FFC000);
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .timeline-connector {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#000066] text-[#F4F4F4]">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <!-- HERO SECTION -->
+        <header class="text-center my-8 md:my-12">
+            <h1 class="text-4xl md:text-6xl font-black gradient-text tracking-tight">Your AI Journey: 4 Weeks to Success</h1>
+            <p class="mt-6 text-lg md:text-2xl text-[#F4F4F4] max-w-4xl mx-auto leading-relaxed text-center">
+                Transform your challenge into a <strong class="text-[#FFC000]">working AI solution</strong> with expert guidance, proven frameworks, and a dedicated team.
+            </p>
+            <p class="mt-2 text-lg md:text-2xl text-[#33CC33] max-w-4xl mx-auto leading-relaxed text-center font-bold">
+                No overwhelm. No guesswork. Just results. 🚀
+            </p>
+            <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center items-center">
+                <div class="bg-[#F4F4F4] text-[#000066] px-6 py-3 rounded-lg font-bold text-lg">
+                    ⏱️ Total Time: <span class="text-[#6600FF]">4 Hours Over 4 Weeks</span>
+                </div>
+                <div class="bg-[#F4F4F4] text-[#000066] px-6 py-3 rounded-lg font-bold text-lg">
+                    🎯 Target Success Rate: <span class="text-[#6600FF]">90%+</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="space-y-16">
+
+            <!-- THE JOURNEY OVERVIEW -->
+            <section class="bg-[#F4F4F4] rounded-xl shadow-lg p-6 md:p-10 text-[#000066]">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#6600FF] text-center mb-6">How It Works: Your Week-by-Week Experience</h2>
+                <p class="text-center text-lg text-[#000066] max-w-3xl mx-auto mb-2">
+                    We've designed this journey to be <strong>efficient, supportive, and results-driven</strong>.
+                </p>
+                <p class="text-center text-lg text-[#000066] max-w-3xl mx-auto">
+                    Here's exactly what happens each week—and what you can expect from us. 💪
+                </p>
+            </section>
+
+            <!-- AFTER SUBMISSION - TACT TEAM ASSEMBLY -->
+            <section id="after-submission" class="week-card bg-gradient-to-br from-[#33CC33] to-[#229922] rounded-xl shadow-2xl p-8 md:p-10 text-[#000066]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">After Submission: TACT Team Assembly Required 📋</h3>
+                    <div class="bg-[#FFC000] text-[#000066] px-4 py-2 rounded-full font-bold text-sm">PREPARATION PHASE</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What Happens First:</h4>
+                        <ul class="space-y-3 text-lg text-[#F4F4F4]">
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Submit your request</strong> using a Jules Assistant</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Ambassador sends Email #1</strong> with TACT Team Assembly requirements</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>You must assemble your team:</strong> 1 Super User + 1-2 SMEs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>CRITICAL RULE:</strong> No TACT team = No booking the 4-week sprint</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Timeline matters:</strong> Early response = faster scheduling</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>You receive homework:</strong> AI Adoption Checklist (your roadmap for team buy-in)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">Your TACT Team:</h4>
+                        <div class="bg-[#F4F4F4] rounded-lg p-6 space-y-3 border-4 border-[#6600FF]">
+                            <p class="font-bold text-xl text-[#000066]">👤 <span class="text-[#33CC33]">Super User ("Agent Boss")</span></p>
+                            <p class="text-sm text-[#000066]">Hands-on development partner, future maintenance owner, drives adoption</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">🧠 <span class="text-[#6600FF]">SMEs (1-2 people)</span></p>
+                            <p class="text-sm text-[#000066]">Subject Matter Experts with deep workflow knowledge</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">⏰ <span class="text-[#6600FF]">Time Commitment (Week 1-8)</span></p>
+                            <p class="text-sm text-[#000066]">Sponsor: 4 hours | Super User: 5-8 hours | SME: 4-6 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#6600FF] text-[#F4F4F4] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">🎯 Once TACT Team Confirmed:</p>
+                    <p class="text-lg">Ambassador sends <strong>Email #2</strong> with Week 1 & 2 calendar invites, Week 4 & 8 reserved on ambassador calendar. Change management starts from Day 1! 💪</p>
+                </div>
+            </section>
+
+            <div class="timeline-connector"></div>
+
+            <!-- WEEK 1: DISCOVERY -->
+            <section id="week1" class="week-card bg-gradient-to-br from-[#6600FF] to-[#4400AA] rounded-xl shadow-2xl p-8 md:p-10 text-[#F4F4F4]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">Week 1: Discovery 🔍</h3>
+                    <div class="bg-[#FFC000] text-[#000066] px-4 py-2 rounded-full font-bold text-sm">1 HOUR</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#FFC000] mb-4">What Happens:</h4>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Deep-dive conversation</strong> with your dedicated team of Ambassadors</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>We understand your challenge</strong> – the stuck point, edge cases, and success criteria</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Data and workflow assessment</strong> – guidance to prepare you for Week 2</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Change readiness assessment</strong> using proven ADKAR framework</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#FFC000] mb-4">What You Get:</h4>
+                        <div class="bg-[#F4F4F4] text-[#000066] rounded-lg p-6 space-y-3">
+                            <p class="font-bold text-lg">🎯 <span class="text-[#6600FF]">Clear Success Metrics</span></p>
+                            <p class="text-sm">Exactly how we'll measure success (efficiency, business impact, adoption)</p>
+                            <p class="font-bold text-lg mt-4">📅 <span class="text-[#6600FF]">All Sessions Scheduled</span></p>
+                            <p class="text-sm">Week 2, 4, and 8 calendar invites sent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#FFC000] text-[#000066] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">🎯 Your Homework for Week 2 Success:</p>
+                    <ul class="text-lg space-y-2 mt-3">
+                        <li><strong>•</strong> Complete your AI Adoption Checklist (target 75% by Week 2)</li>
+                        <li><strong>•</strong> Prepare your dataset – must be clean and structured</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="timeline-connector"></div>
+
+            <!-- WEEK 2: BUILD -->
+            <section id="week2" class="week-card bg-[#E5E7EB] rounded-xl shadow-2xl p-8 md:p-10 text-[#000066]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">Week 2: Build 🔨</h3>
+                    <div class="bg-[#6600FF] text-[#F4F4F4] px-4 py-2 rounded-full font-bold text-sm">1.5 HOURS</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What Happens:</h4>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Readiness Gate (2 days before)</strong>: Checklist must be 75%+ complete (Phase 1) + Data Ready </span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Not ready? = Pause and reschedule</strong></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>YOU drive, WE guide</strong> – Your Super User leads the build with our expert support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Live testing and refinement</strong> – We troubleshoot together in real-time</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>By end of session</strong>: You have a functional AI assistant (draft version ready to test!)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What You Get:</h4>
+                        <div class="bg-[#F4F4F4] rounded-lg p-6 space-y-3 border-4 border-[#6600FF]">
+                            <p class="font-bold text-xl">🎉 <span class="text-[#33CC33]">YOUR AI ASSISTANT</span></p>
+                            <p class="text-base">A working AI solution tailored to your exact workflow and challenge</p>
+                            <p class="font-bold text-lg mt-4">📚 <span class="text-[#6600FF]">Testing Guide</span></p>
+                            <p class="text-sm">Step-by-step instructions for Week 3 independent testing</p>
+                            <p class="font-bold text-lg mt-4">🛠️ <span class="text-[#6600FF]">Refinement Tips</span></p>
+                            <p class="text-sm">How to fine-tune based on your team's feedback</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#6600FF] text-[#F4F4F4] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">💪 Why This Works:</p>
+                    <p class="text-lg">YOU own the solution from Day 1. We don't build FOR you – we build WITH you. This ensures adoption, sustainability, and team confidence.</p>
+                </div>
+            </section>
+
+            <div class="timeline-connector"></div>
+
+            <!-- WEEK 3: TEST -->
+            <section id="week3" class="week-card bg-gradient-to-br from-[#33CC33] to-[#229922] rounded-xl shadow-2xl p-8 md:p-10 text-[#000066]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">Week 3: Test & Refine 🧪</h3>
+                    <div class="bg-[#FFC000] text-[#000066] px-4 py-2 rounded-full font-bold text-sm">0 HOURS</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What Happens:</h4>
+                        <ul class="space-y-3 text-lg text-[#F4F4F4]">
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>You're in the driver's seat!</strong> Your team tests the AI assistant independently</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Real-world validation</strong> – Use it with actual work, not just practice scenarios</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Fine-tune and adjust</strong> – Tweak prompts, add edge cases, refine outputs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Start sharing with users</strong> – Roll out to early adopters, collect feedback</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#FFC000] mr-3 text-2xl">✓</span>
+                                <span><strong>Complete remaining change management</strong> – Finish your AI Adoption Checklist tasks</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What You Get:</h4>
+                        <div class="bg-[#F4F4F4] rounded-lg p-6 space-y-3 border-4 border-[#6600FF]">
+                            <p class="font-bold text-xl text-[#000066]">🎯 <span class="text-[#33CC33]">CONFIDENCE</span></p>
+                            <p class="text-sm text-[#000066]">You've tested it, refined it, and know it works for YOUR workflow</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">📊 <span class="text-[#6600FF]">REAL FEEDBACK</span></p>
+                            <p class="text-sm text-[#000066]">User insights on what's working and what needs adjustment</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">🚀 <span class="text-[#6600FF]">ADOPTION MOMENTUM</span></p>
+                            <p class="text-sm text-[#000066]">Early adopters become champions, creating organic demand</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#6600FF] text-[#F4F4F4] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">💡 Pro Tip:</p>
+                    <p class="text-lg">This is YOUR week to experiment without pressure. Try different approaches, test edge cases, and make it perfect for your team. We're here if you need us, but you've got this! 💪</p>
+                </div>
+            </section>
+
+            <div class="timeline-connector"></div>
+
+            <!-- WEEK 4: RESULTS -->
+            <section id="week4" class="week-card bg-gradient-to-br from-[#6600FF] to-[#4400AA] rounded-xl shadow-2xl p-8 md:p-10 text-[#F4F4F4]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">Week 4: Measure & Celebrate 📊</h3>
+                    <div class="bg-[#FFC000] text-[#000066] px-4 py-2 rounded-full font-bold text-sm">1 HOUR</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#FFC000] mb-4">What Happens:</h4>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Results measurement</strong> – Compare actual outcomes vs. Week 1 projections</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>ROI validation</strong> – Quantify time saved, efficiency gained, business impact</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Identify issues</strong> – What's not working? What needs adjustment?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Refine and iterate</strong> – Make final tweaks based on real usage data</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#33CC33] mr-3 text-2xl">✓</span>
+                                <span><strong>Celebrate milestone!</strong> – Recognize early adopters and success stories</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#FFC000] mb-4">What You Get:</h4>
+                        <div class="bg-[#F4F4F4] text-[#000066] rounded-lg p-6 space-y-3">
+                            <p class="font-bold text-xl">📈 <span class="text-[#6600FF]">ROI Report</span></p>
+                            <p class="text-sm">Quantified results: hours saved, efficiency gains, business impact</p>
+                            <p class="font-bold text-lg mt-4">🎯 <span class="text-[#6600FF]">Refinement Plan</span></p>
+                            <p class="text-sm">Specific adjustments to maximize effectiveness</p>
+                            <p class="font-bold text-lg mt-4">🏆 <span class="text-[#6600FF]">Success Documentation</span></p>
+                            <p class="text-sm">Initial success story for organizational learning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#FFC000] text-[#000066] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">🎉 This is Where the Magic Happens:</p>
+                    <p class="text-lg">We prove the value together! Your results become the blueprint for scaling this solution across other teams. You're not just solving YOUR problem – you're pioneering a solution for the entire organization! 🚀</p>
+                </div>
+            </section>
+
+            <div class="timeline-connector"></div>
+
+            <!-- WEEK 8: FOLLOW-UP -->
+            <section id="week8" class="week-card bg-[#E5E7EB] rounded-xl shadow-2xl p-8 md:p-10 text-[#000066]">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-3xl md:text-4xl font-black">Week 8: Sustained Success ✨</h3>
+                    <div class="bg-[#6600FF] text-[#F4F4F4] px-4 py-2 rounded-full font-bold text-sm">30 MINUTES</div>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What Happens:</h4>
+                        <ul class="space-y-3 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Quick check-in</strong> – Is adoption sustained? Are users still engaged?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>ROI leakage analysis</strong> – Where did projected value slip? How do we recover it?</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Success story documentation</strong> – Capture lessons learned for organizational sharing</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-[#6600FF] mr-3 text-2xl">✓</span>
+                                <span><strong>Scaling discussion</strong> – Can this solution benefit other teams? Other regions?</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-2xl font-bold text-[#6600FF] mb-4">What You Get:</h4>
+                        <div class="bg-[#F4F4F4] rounded-lg p-6 space-y-3 border-4 border-[#33CC33]">
+                            <p class="font-bold text-xl text-[#000066]">🎯 <span class="text-[#33CC33]">LONG-TERM SUCCESS</span></p>
+                            <p class="text-sm text-[#000066]">Validation that your solution delivers sustained value</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">📚 <span class="text-[#6600FF]">Published Success Story</span></p>
+                            <p class="text-sm text-[#000066]">4 formats: Internal report, executive summary, SharePoint post, external case study</p>
+                            <p class="font-bold text-lg mt-4 text-[#000066]">🚀 <span class="text-[#6600FF]">Scaling Roadmap</span></p>
+                            <p class="text-sm text-[#000066]">If successful: Plan to expand to 10 → 100 → 339 BUs → global</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-[#33CC33] text-[#F4F4F4] rounded-lg p-6">
+                    <p class="font-bold text-xl mb-2">💪 Your Impact Multiplies:</p>
+                    <p class="text-lg">By Week 8, you're not just a user – you're a champion! Your success story inspires other teams, your lessons learned prevent their mistakes, and your solution becomes a template for organizational transformation. This is how we change the game together! 🎯✨</p>
+                </div>
+            </section>
+
+            <!-- KEY ASSISTANTS SPOTLIGHT -->
+            <section id="assistants" class="mt-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#FFC000] text-center mb-4">👤 Your AI Support Team 🤖</h2>
+                <p class="text-center text-lg text-[#F4F4F4] max-w-3xl mx-auto mb-12">
+                    Behind every successful AI journey are specialized assistants designed to make your life easier. Meet the team that's got your back! 💪
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Jules Support Request Intake -->
+                    <a href="https://jules.bureauveritas.com/assistant/01KC831081FWW5KYKK1PGYQBXD" target="_blank" class="assistant-card bg-gradient-to-br from-[#6600FF] to-[#4400AA] rounded-xl shadow-lg p-6 text-[#F4F4F4] no-underline">
+                        <div class="text-5xl mb-4 text-center">📥</div>
+                        <h3 class="text-2xl font-bold text-[#FFC000] text-center mb-3">Jules Support Request Intake</h3>
+                        <p class="text-sm mb-4 text-center italic">Requester Starting Point</p>
+                        <p class="text-base mb-4">Transforms vague "I need AI help" into data-driven, prioritized proposals using systematic evaluation.</p>
+                        <div class="bg-[#F4F4F4] text-[#000066] rounded-lg p-4 mt-4">
+                            <p class="font-bold text-sm mb-2">🎯 Superpowers:</p>
+                            <ul class="text-xs space-y-1">
+                                <li>• Multi-problem prioritization</li>
+                                <li>• Impact-Effort Matrix scoring</li>
+                                <li>• TACT team requirements</li>
+                                <li>• Pre-filled routing brief</li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Ambassador Discovery Pro -->
+                    <a href="https://jules.bureauveritas.com/assistant/01KCMEMA6VGCNHFN5A790YPYYD" target="_blank" class="assistant-card bg-[#E5E7EB] rounded-xl shadow-lg p-6 text-[#000066] no-underline">
+                        <div class="text-5xl mb-4 text-center">🔍</div>
+                        <h3 class="text-2xl font-bold text-[#6600FF] text-center mb-3">Ambassador Discovery Pro</h3>
+                        <p class="text-sm mb-4 text-center italic">Ambassador Helper</p>
+                        <p class="text-base mb-4 text-center">Prepares discovery meetings, generates emails, and creates routing briefs with change readiness assessment.</p>
+                        <div class="bg-[#F4F4F4] text-[#000066] rounded-lg p-4 mt-4 border-2 border-[#6600FF]">
+                            <p class="font-bold text-sm mb-2">🎯 Superpowers:</p>
+                            <ul class="text-xs space-y-1">
+                                <li>• 60-min meeting prep automation</li>
+                                <li>• ADKAR change readiness assessment</li>
+                                <li>• Routing brief generation</li>
+                                <li>• Email template creation</li>
+                            </ul>
+                        </div>
+                    </a>
+
+                    <!-- Human Evaluation -->
+                    <div class="assistant-card bg-gradient-to-br from-[#33CC33] to-[#229922] rounded-xl shadow-lg p-6 text-[#F4F4F4]">
+                        <div class="text-5xl mb-4 text-center">👤</div>
+                        <h3 class="text-2xl font-bold text-[#FFC000] text-center mb-3">Human Evaluation & Quality</h3>
+                        <p class="text-sm mb-4 text-center italic">The Human Touch</p>
+                        <p class="text-base mb-4 text-center">Every AI assistant is validated by human expertise. Our ambassadors ensure quality, provide coaching insights, and continuously improve solutions based on real-world feedback.</p>
+                        <div class="bg-[#F4F4F4] text-[#000066] rounded-lg p-4 mt-4 border-2 border-[#33CC33]">
+                            <p class="font-bold text-sm mb-2">💪 Why This Matters:</p>
+                            <ul class="text-xs space-y-1">
+                                <li>• Meeting Summary saves 2.5-5 hrs/month per user</li>
+                                <li>• Training Note Taker captures knowledge in real-time</li>
+                                <li>• Human coaching ensures continuous improvement</li>
+                                <li>• Quality validation prevents automation of broken processes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CALL TO ACTION -->
+            <section class="bg-gradient-to-br from-[#6600FF] to-[#4400AA] rounded-xl shadow-2xl p-8 md:p-12 text-center text-[#F4F4F4] mt-16">
+                <h2 class="text-3xl md:text-4xl font-black mb-6">Ready to Start Your AI Journey? 🚀</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                    Transform your challenge into a working solution in just 4 weeks. Expert guidance, proven frameworks, and a dedicated team supporting you every step of the way.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                    <a href="https://jules.bureauveritas.com/assistant/01KC831081FWW5KYKK1PGYQBXD" target="_blank" class="bg-[#FFC000] text-[#000066] px-8 py-4 rounded-lg font-bold text-lg hover:bg-[#33CC33] hover:text-[#F4F4F4] transition-all duration-300 transform hover:scale-105 shadow-lg no-underline">
+                        🎯 Start Your Request
+                    </a>
+                    <div class="bg-[#F4F4F4] text-[#000066] px-8 py-4 rounded-lg font-bold text-lg">
+                        Questions? We're here to help! 💪
+                    </div>
+                </div>
+                <p class="mt-8 text-sm text-[#F4F4F4] opacity-80">
+                    Total Time Investment: 4 hours over 4 weeks | Target Success Rate: 90%+
+                </p>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="text-center py-8 text-[#F4F4F4] mt-16">
+        <p class="text-sm">&copy; 2026 Bureau Veritas NAM - AI Ambassador Pod Program. All rights reserved.</p>
+        <p class="text-sm mt-2">Created: Jan 5, 2026 | Edited: Feb 3, 2026 by Brenda Li & Jules in Richmond, BC, Canada 🇨🇦</p>
+    </footer>
+
+    <button id="scrollToTopBtn" class="scroll-to-top">Top ↑</button>
+
+    <script>
+        // Scroll to top button functionality
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
